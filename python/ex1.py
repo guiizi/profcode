@@ -1,5 +1,12 @@
-valor_prestacao = float(input("Digite o valor da prestação: "))
-multa = float(input("Digite a porcentagem da multa pelo atraso (em %): "))
-qtdedias = int(input("Digite a quantidade de dias de atraso: ")) 
-prestacao = valor_prestacao + valor_prestacao * multa/100 * qtdedias
-print (f"O valor da prestação atualizado é: R${prestacao:.2f}")  
+def calculaArea(base, altura):
+    area = base * altura / 2
+    return area 
+
+base = float(input("Digite o valor da base do triângulo: "))
+altura = float(input("Digite o valor da altura do triângulo: "))
+
+print("A area do tringulo é 2.%f cm²"%calculaArea(base,altura))
+print("Um metodo pode ser utilizado quantas vezes necessarias")      
+print(calculaArea(8,5))
+print(calculaArea(10,10))
+print(calculaArea(2,5))
